@@ -4,13 +4,19 @@
 ## code for inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-inv <- NULL 
-set <- function(y) { 
-x <<- y
-inv <<- NULL
-
+        inv <- NULL
+        set <- function(y) {
+                x <<- y
+                inv <<- NULL
+        }
+        get <- function() x
+        setInverse <- function(inverse) inv <<- inverse
+        getInverse <- function() inv
+        list(set = set,
+             get = get,
+             setInverse = setInverse,
+             getInverse = getInverse)
 }
-
 
 ## Computing the inverse of the matrix
 
