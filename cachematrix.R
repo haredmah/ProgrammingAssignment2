@@ -1,4 +1,4 @@
-## Put comments here that give an overall description of what your
+## Code for inverse matrix function
 ## functions do
 
 ## code for inverse matrix
